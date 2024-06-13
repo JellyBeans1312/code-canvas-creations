@@ -29,6 +29,23 @@ export default {
         ],
       },
     },
+    colors: {
+      "midnight-green": {
+        DEFAULT: "143E3E",
+      },
+      "tiffany-blue": {
+        DEFAULT: "84DCC6"
+      },
+      "columbia-ble": {
+        DEFAULT: "D6EDFF"
+      },
+      "uranian-blue": {
+        DEFAULT: "ACD7EC"
+      },
+      "sunset": {
+        DEFAULT: "FFCB77"        
+      }
+    },
   },
   plugins: [],
 } satisfies Config

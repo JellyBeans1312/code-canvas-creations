@@ -6,12 +6,12 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Studio',
-    default: 'Studio - Award winning developer studio based in Denmark',
+    template: '%s - CodeCanvas Creations LLC',
+    default: 'CodeCanvas Creations LLC - Award winning developer studio based in Kansas',
   },
 }
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: {  children: React.ReactNode }) {
   return (
     <html lang="en" className="h-full bg-neutral-950 text-base antialiased">
       <body className="flex min-h-full flex-col">
