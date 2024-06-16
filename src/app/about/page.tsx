@@ -10,18 +10,11 @@ import { PageIntro } from '@/components/PageIntro'
 import { PageLinks } from '@/components/PageLinks'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StatList, StatListItem } from '@/components/StatList'
-import imageAngelaFisher from '@/images/team/angela-fisher.jpg'
-import imageBenjaminRussel from '@/images/team/benjamin-russel.jpg'
-import imageBlakeReid from '@/images/team/blake-reid.jpg'
-import imageChelseaHagon from '@/images/team/chelsea-hagon.jpg'
-import imageDriesVincent from '@/images/team/dries-vincent.jpg'
-import imageEmmaDorsey from '@/images/team/emma-dorsey.jpg'
-import imageJeffreyWebb from '@/images/team/jeffrey-webb.jpg'
-import imageKathrynMurphy from '@/images/team/kathryn-murphy.jpg'
-import imageLeonardKrasner from '@/images/team/leonard-krasner.jpg'
-import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
-import imageMichaelFoster from '@/images/team/michael-foster.jpg'
-import imageWhitneyFrancis from '@/images/team/whitney-francis.jpg'
+import Founder from '@/images/team/founder-ceo-aidan.jpg';
+import Developer from '@/images/team/developer-aidan.jpg';
+import Designer from '@/images/team/designer-aidan.jpg';
+import UXer from '@/images/team/user-experience-aidan.jpg';
+import Copywriter from '@/images/team/copywriter-aidan.jpg';
 import { loadArticles } from '@/lib/mdx'
 
 function Culture() {
@@ -30,7 +23,7 @@ function Culture() {
       <SectionIntro
         eyebrow="Our culture"
         title="Balance your passion with your passion for life."
-        invert
+        invert={false}
       >
         <p>
           We are a group of like-minded people who share the same core values.
@@ -61,69 +54,34 @@ const team = [
     title: 'Leadership',
     people: [
       {
-        name: 'Leslie Alexander',
-        role: 'Co-Founder / CEO',
-        image: { src: imageLeslieAlexander },
-      },
-      {
-        name: 'Michael Foster',
-        role: 'Co-Founder / CTO',
-        image: { src: imageMichaelFoster },
-      },
-      {
-        name: 'Dries Vincent',
-        role: 'Partner & Business Relations',
-        image: { src: imageDriesVincent },
-      },
+        name: 'Aidan McKay',
+        role: 'Founder / CEO',
+        image: { src: Founder },
+      }
     ],
   },
   {
     title: 'Team',
     people: [
       {
-        name: 'Chelsea Hagon',
-        role: 'Senior Developer',
-        image: { src: imageChelseaHagon },
+        name: 'Aidan McKay',
+        role: 'Developer',
+        image: { src: Developer },
       },
       {
-        name: 'Emma Dorsey',
-        role: 'Senior Designer',
-        image: { src: imageEmmaDorsey },
+        name: 'Aidan McKay',
+        role: 'Designer',
+        image: { src: Designer },
       },
       {
-        name: 'Leonard Krasner',
-        role: 'VP, User Experience',
-        image: { src: imageLeonardKrasner },
+        name: 'Aidan Mckay',
+        role: 'User Experience',
+        image: { src: UXer },
       },
       {
-        name: 'Blake Reid',
+        name: 'Aidan McKay',
         role: 'Junior Copywriter',
-        image: { src: imageBlakeReid },
-      },
-      {
-        name: 'Kathryn Murphy',
-        role: 'VP, Human Resources',
-        image: { src: imageKathrynMurphy },
-      },
-      {
-        name: 'Whitney Francis',
-        role: 'Content Specialist',
-        image: { src: imageWhitneyFrancis },
-      },
-      {
-        name: 'Jeffrey Webb',
-        role: 'Account Coordinator',
-        image: { src: imageJeffreyWebb },
-      },
-      {
-        name: 'Benjamin Russel',
-        role: 'Senior Developer',
-        image: { src: imageBenjaminRussel },
-      },
-      {
-        name: 'Angela Fisher',
-        role: 'Front-end Developer',
-        image: { src: imageAngelaFisher },
+        image: { src: Copywriter },
       },
     ],
   },
@@ -138,7 +96,7 @@ function Team() {
             <Border as={FadeIn} />
             <div className="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
               <FadeIn>
-                <h2 className="font-display text-2xl font-semibold text-neutral-950">
+                <h2 className="font-display text-2xl font-semibold text-accentOne">
                   {group.title}
                 </h2>
               </FadeIn>
@@ -157,10 +115,10 @@ function Team() {
                             className="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
                           />
                           <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
-                            <p className="font-display text-base/6 font-semibold tracking-wide text-white">
+                            <p className="font-display text-base/6 font-semibold tracking-wide text-accentOne">
                               {person.name}
                             </p>
-                            <p className="mt-2 text-sm text-white">
+                            <p className="mt-2 text-sm text-accentOne">
                               {person.role}
                             </p>
                           </div>
