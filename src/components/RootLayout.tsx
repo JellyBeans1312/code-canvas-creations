@@ -231,15 +231,6 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
             <div className="relative bg-accentOne before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-primary">
               <Container>
                 <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
-                  {/* <div>
-                    <h2 className="font-display text-base font-semibold text-secondary">
-                      Our offices
-                    </h2>
-                    <Offices
-                      invert={false}
-                      className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"
-                    />
-                  </div> */}
                   <div className="sm:border-l sm:border-transparent sm:pl-16">
                     <h2 className="font-display text-base font-semibold text-secondary">
                       Follow us
@@ -263,7 +254,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
           className="relative isolate flex w-full flex-col pt-9"
         >
           <GridPattern
-            className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full fill-accentThree stroke-primary/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
+            className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full fill-accentThree stroke-primary/5 lg:[mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)] [mask-image:linear-gradient(to_bottom_left,white_0%,transparent_0%)]"
             yOffset={-96}
             interactive
           />
