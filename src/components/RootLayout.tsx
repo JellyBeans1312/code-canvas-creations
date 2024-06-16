@@ -18,7 +18,7 @@ import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
-import { Offices } from '@/components/Offices'
+
 import { SocialMedia } from '@/components/SocialMedia'
 
 const RootLayoutContext = createContext<{
@@ -100,7 +100,7 @@ function Header({
               className={clsx(
                 'h-6 w-6',
                 invert
-                  ? 'fill-white group-hover:fill-neutral-200'
+                  ? 'fill-secondary group-hover:fill-neutral-300'
                   : 'fill-accentThree group-hover:fill-[#FFD899]',
               )}
             />
@@ -134,7 +134,7 @@ function NavigationItem({
       className="group relative isolate -mx-6 bg-accentOne px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-neutral-800 sm:even:pl-16"
     >
       {children}  
-      <span className="absolute inset-y-0 -z-10 w-screen bg-accentOne opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
+      <span className="absolute inset-y-0 -z-10 w-screen bg-accentOne opacity-0 transition group-odd:right-0 group-even:left-0" />
     </Link>
   )
 }
@@ -206,17 +206,13 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
           layout
           id={panelId}
           style={{ height: expanded ? 'auto' : '0.5rem' }}
-          className={clsx(
-            'relative z-50 overflow-hidden pt-2',
-            expanded 
-            ? 'bg-primary' : 'bg-accentOne'
-          )}
+          className='relative z-50 overflow-hidden pt-2 bg-accentOne'
           aria-hidden={expanded ? undefined : 'true'}
           // @ts-ignore (https://github.com/facebook/react/issues/17157)
           inert={expanded ? undefined : ''}
         >
-          <motion.div layout className="bg-neutral-800">
-            <div ref={navRef} className="bg-primary pb-16 pt-14">
+          <motion.div layout className="bg-primary">
+            <div ref={navRef} className="bg-accentOne pb-16 pt-14">
               <Header
                 invert
                 panelId={panelId}
@@ -232,18 +228,18 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
               />
             </div>
             <Navigation />
-            <div className="relative bg-accentOne before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
+            <div className="relative bg-accentOne before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-primary">
               <Container>
                 <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
-                  <div>
+                  {/* <div>
                     <h2 className="font-display text-base font-semibold text-secondary">
                       Our offices
                     </h2>
                     <Offices
-                      invert
+                      invert={false}
                       className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"
                     />
-                  </div>
+                  </div> */}
                   <div className="sm:border-l sm:border-transparent sm:pl-16">
                     <h2 className="font-display text-base font-semibold text-secondary">
                       Follow us
@@ -267,7 +263,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
           className="relative isolate flex w-full flex-col pt-9"
         >
           <GridPattern
-            className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full fill-accentThree stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
+            className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full fill-accentThree stroke-primary/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
             yOffset={-96}
             interactive
           />

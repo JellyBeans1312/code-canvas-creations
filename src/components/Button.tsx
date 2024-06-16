@@ -18,7 +18,7 @@ export function Button({
     className,
     'inline-flex rounded-full px-4 py-1.5 text-sm font-semibold transition',
     invert
-      ? 'bg-accentOne text-secondary hover:bg-neutral-200'
+      ? 'bg-secondary text-accentOne hover:bg-slate-400'
       : 'bg-accentThree text-primary hover:bg-[#FFD899]',
   )
 
