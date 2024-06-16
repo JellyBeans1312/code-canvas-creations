@@ -41,7 +41,12 @@ export default {
         },
         "sunset": {
           DEFAULT: "FFCB77"        
-        }
+        }, 
+        primary: "#0A121F",
+        secondary: "#4D7C8A",
+        accentOne: "#F4F3EE",
+        accentTwo: "#ACD7EC",
+        accentThree: "#FFCB77"
       },
     },
   },

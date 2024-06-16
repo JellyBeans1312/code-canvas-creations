@@ -6,7 +6,6 @@ import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
-import { Offices } from '@/components/Offices'
 import { PageIntro } from '@/components/PageIntro'
 import { SocialMedia } from '@/components/SocialMedia'
 
@@ -23,11 +22,11 @@ function TextInput({
         id={id}
         {...props}
         placeholder=" "
-        className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-12 text-base/6 text-neutral-950 ring-4 ring-transparent transition focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5 group-first:rounded-t-2xl group-last:rounded-b-2xl"
+        className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-12 text-base/6 text-primary ring-4 ring-transparent transition focus:border-accentTwo focus:outline-none focus:ring-neutral-950/5 group-first:rounded-t-2xl group-last:rounded-b-2xl"
       />
       <label
         htmlFor={id}
-        className="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 text-neutral-500 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-neutral-950 peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-neutral-950"
+        className="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 text-secondary transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-neutral-950 peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-neutral-950"
       >
         {label}
       </label>
@@ -44,9 +43,9 @@ function RadioInput({
       <input
         type="radio"
         {...props}
-        className="h-6 w-6 flex-none appearance-none rounded-full border border-neutral-950/20 outline-none checked:border-[0.5rem] checked:border-neutral-950 focus-visible:ring-1 focus-visible:ring-neutral-950 focus-visible:ring-offset-2"
+        className="h-6 w-6 flex-none appearance-none rounded-full border border-secondary outline-none checked:border-[0.5rem] checked:border-secondary focus-visible:ring-1 focus-visible:ring-secondary focus-visible:ring-offset-2"
       />
-      <span className="text-base/6 text-neutral-950">{label}</span>
+      <span className="text-base/6 text-secondary">{label}</span>
     </label>
   )
 }
@@ -55,10 +54,10 @@ function ContactForm() {
   return (
     <FadeIn className="lg:order-last">
       <form>
-        <h2 className="font-display text-base font-semibold text-neutral-950">
+        <h2 className="font-display text-base font-semibold text-accentOne">
           Work inquiries
         </h2>
-        <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
+        <div className="isolate mt-6 -space-y-px rounded-2xl bg-accentOne border-2 border-accentThree">
           <TextInput label="Name" name="name" autoComplete="name" />
           <TextInput
             label="Email"
@@ -96,18 +95,8 @@ function ContactForm() {
 function ContactDetails() {
   return (
     <FadeIn>
-      <h2 className="font-display text-base font-semibold text-neutral-950">
-        Our offices
-      </h2>
-      <p className="mt-6 text-base text-neutral-600">
-        Prefer doing things in person? We don’t but we have to list our
-        addresses here for legal reasons.
-      </p>
-
-      <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
-
-      <Border className="mt-16 pt-16">
-        <h2 className="font-display text-base font-semibold text-neutral-950">
+      <Border position={undefined} className="mt-16 p-16 rounded-xl bg-accentOne border-2 border-accentThree">
+        <h2 className="font-display text-base font-semibold text-secondary">
           Email us
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
@@ -116,11 +105,11 @@ function ContactDetails() {
             ['Press', 'press@studioagency.com'],
           ].map(([label, email]) => (
             <div key={email}>
-              <dt className="font-semibold text-neutral-950">{label}</dt>
+              <dt className="font-semibold text-secondary">{label}</dt>
               <dd>
                 <Link
                   href={`mailto:${email}`}
-                  className="text-neutral-600 hover:text-neutral-950"
+                  className="text-neutral-600 hover:text-accentOne"
                 >
                   {email}
                 </Link>
@@ -130,11 +119,11 @@ function ContactDetails() {
         </dl>
       </Border>
 
-      <Border className="mt-16 pt-16">
-        <h2 className="font-display text-base font-semibold text-neutral-950">
+      <Border className="mt-16 p-16">
+        <h2 className="font-display text-base font-semibold text-accentOne">
           Follow us
         </h2>
-        <SocialMedia className="mt-6" />
+        <SocialMedia className="mt-6"/>
       </Border>
     </FadeIn>
   )
