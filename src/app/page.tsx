@@ -94,14 +94,14 @@ function CaseStudies({
                     />
                   </Link>
                 </h3>
-                <p className="mt-6 flex gap-x-2 text-sm text-accentOne hover:text-secondary">
+                <p className="mt-6 flex gap-x-2 text-sm text-neutral-600 hover:text-secondary">
                   <time
                     dateTime={caseStudy.date.split('-')[0]}
                     className="font-semibold"
                   >
                     {caseStudy.date.split('-')[0]}
                   </time>
-                  <span className="text-accentOne" aria-hidden="true">
+                  <span className="text-neutral-600" aria-hidden="true">
                     /
                   </span>
                   <span>Case study</span>
@@ -145,7 +145,7 @@ function Services() {
               />
             </FadeIn>
           </div>
-          <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
+          <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4 lg:px-0 px-6 ">
             <ListItem title="Web development">
               We specialise in crafting beautiful, high quality marketing pages.
               The rest of the website will be a shell that uses lorem ipsum
