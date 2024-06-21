@@ -29,19 +29,6 @@ export default {
         ],
       },
       colors: {
-        "midnight-green":"143E3E",
-        "tiffany-blue": {
-          DEFAULT: "84DCC6"
-        },
-        "columbia-blue": {
-          DEFAULT: "D6EDFF"
-        },
-        "uranian-blue": {
-          DEFAULT: "ACD7EC"
-        },
-        "sunset": {
-          DEFAULT: "FFCB77"        
-        }, 
         primary: "#0A121F",
         secondary: "#4D7C8A",
         accentOne: "#F4F3EE",

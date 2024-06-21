@@ -62,7 +62,7 @@ export const MDXComponents = {
     className,
     ...props
   }: React.ComponentPropsWithoutRef<typeof TagList>) {
-    return <TagList className={clsx('my-6', className)} {...props} />
+    return <TagList className={clsx('my-6 text-primary', className)} {...props} />
   },
   TagListItem,
   TopTip({

@@ -9,6 +9,15 @@ import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { SocialMedia } from '@/components/SocialMedia'
 
+// function handleSubmit(e: any) {
+//   e.preventDefault();
+//   let contactData =  {};
+//   Array.from(e.curentTarget).map((field: any) =>{
+//     if(!field.name) return;
+//     contactData[field.name] = field.value
+//   })
+// }
+
 function TextInput({
   label,
   ...props
@@ -101,15 +110,15 @@ function ContactDetails() {
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
-            ['Careers', 'careers@studioagency.com'],
-            ['Press', 'press@studioagency.com'],
+            ['Contact', 'contact@canvasofcode.com'],
+            ['Press', 'press@canvasofcode.com'],
           ].map(([label, email]) => (
             <div key={email}>
               <dt className="font-semibold text-secondary">{label}</dt>
               <dd>
                 <Link
                   href={`mailto:${email}`}
-                  className="text-neutral-600 hover:text-accentOne"
+                  className="text-neutral-600 hover:text-primary"
                 >
                   {email}
                 </Link>
