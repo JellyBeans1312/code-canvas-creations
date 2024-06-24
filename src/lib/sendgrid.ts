@@ -1,6 +1,6 @@
 import * as sgMail from '@sendgrid/mail'
 const sgApiKey = process.env.SENDGRID_API_KEY
-sgMail.setApiKey(sgApiKey)
+// sgMail.setApiKey(sgApiKey)
  type requestObj = {
     to: string,
     from: string,
@@ -22,7 +22,7 @@ async function sendContactEmail({
 
     }
 
-    await sgMail.send()
+    // await sgMail.send()
 }
 
 export default sendContactEmail;

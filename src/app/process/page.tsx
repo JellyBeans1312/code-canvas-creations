@@ -58,24 +58,27 @@ function Discover() {
     <Section title="Discover" image={{ src: imageWhiteboard }}>
       <div className="space-y-6 text-base text-neutral-300">
         <p>
-          We work closely with our clients to understand their{' '}
-          <strong className="font-semibold text-accentOne">needs</strong> and
-          goals, embedding ourselves in their every day operations to understand
-          what makes their business tick.
+        CodeCanvas Creations LLC begins every project with a comprehensive Discovery 
+        phase designed to deeply understand our clients' vision and objectives. 
+
+        This phase starts with an initial {' '}
+        <strong className='font-semibold text-accentOne'>consultation</strong>{' '}
+        where we prioritize listening to your ideas, 
+        challenges, and aspirations. 
+
         </p>
         <p>
-          Our team of private investigators shadow the company director’s for
-          several weeks while our account managers focus on going through their
-          trash. Our senior security experts then perform social engineering
-          hacks to gain access to their{' '}
-          <strong className="font-semibold text-accentOne">business</strong>{' '}
-          accounts — handing that information over to our forensic accounting
-          team.
+          We prioritize collaboration and communication, aiming to deliver solutions 
+          that not only meet but exceed your expectations. By fostering a proactive and 
+          transparent process, we lay a solid foundation for {' '}
+          <strong className="font-semibold text-accentOne">successful project execution,</strong> {' '}
+          setting the stage for innovative and high-quality software development 
+          tailored to your unique needs.
         </p>
         <p>
-          Once the full audit is complete, we report back with a comprehensive{' '}
-          <strong className="font-semibold text-accentOne">plan</strong> and,
-          more importantly, a budget.
+          Our goal is to achieve mutual {' '}
+          <strong className="font-semibold text-accentOne">agreement</strong> on the project roadmap, 
+          encompassing timelines, milestones, and responsibilities.
         </p>
       </div>
 
@@ -84,11 +87,11 @@ function Discover() {
       </h3>
       <TagList className="mt-4">
         <TagListItem>In-depth questionnaires</TagListItem>
-        <TagListItem>Feasibility studies</TagListItem>
-        <TagListItem>Blood samples</TagListItem>
-        <TagListItem>Employee surveys</TagListItem>
+        <TagListItem>Project Vision and Objectives</TagListItem>
+        <TagListItem>Requirements Documentation</TagListItem>
+        <TagListItem>Project Scope Definition</TagListItem>
         <TagListItem>Proofs-of-concept</TagListItem>
-        <TagListItem>Forensic audit</TagListItem>
+        <TagListItem>Budget Estimate</TagListItem>
       </TagList>
     </Section>
   )
@@ -99,23 +102,29 @@ function Build() {
     <Section title="Build" image={{ src: imageLaptop, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-300">
         <p>
-          Based off of the discovery phase, we develop a comprehensive roadmap
-          for each product and start working towards delivery. The roadmap is an
-          intricately tangled mess of technical nonsense designed to drag the
-          project out as long as possible.
+          In the Build phase at CodeCanvas Creations LLC, 
+          we embody our core values of creativity, innovation, 
+          and quality to transform ideas into robust software solutions. 
+          Beginning with meticulous architecture design, we prioritize 
+          creative and scalable solutions that align closely with your project's vision.
         </p>
         <p>
-          Each client is assigned a key account manager to keep lines of
-          communication open and obscure the actual progress of the project.
-          They act as a buffer between the client’s incessant nagging and the
-          development team who are hard at work scouring open source projects
-          for code to re-purpose.
+          Prototyping and development are conducted iteratively, 
+          allowing us to validate concepts early and incorporate feedback seamlessly.
+          Throughout feature implementation, we emphasize creative
+          problem-solving and user-centric design, aiming to enhance
+          user experience while pushing boundaries in functionality and innovation.
         </p>
         <p>
-          Our account managers are trained to only reply to client emails after
-          9pm, several days after the initial email. This reinforces the general
-          aura that we are very busy and dissuades clients from asking for
-          changes.
+        Client involvement is integral; we actively seek and integrate
+         your feedback to refine features and ensure alignment with your evolving needs. 
+        </p>
+        <p>
+          Comprehensive documentation and knowledge transfer further 
+          empower your team to maintain and leverage the developed 
+          solution effectively, solidifying our commitment to delivering
+          not just software, but solutions that inspire confidence 
+          and drive innovation in your organization.
         </p>
       </div>
 
@@ -135,31 +144,36 @@ function Deliver() {
     <Section title="Deliver" image={{ src: imageMeeting, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-300">
         <p>
-          About halfway through the Build phase, we push each project out by 6
-          weeks due to a change in{' '}
+        The Deliver phase is where your software vision becomes{' '}
           <strong className="font-semibold text-accentOne">
-            requirements
-          </strong>
-          . This allows us to increase the budget a final time before launch.
+            reality
+          </strong>{' '}
+          through meticulous deployment and comprehensive testing. 
+          We ensure your solution is robust and secure by conducting
+          rigorous unit, integration, and user acceptance tests.
         </p>
         <p>
-          Despite largely using pre-built components, most of the{' '}
-          <strong className="font-semibold text-accentOne">progress</strong>{' '}
-          on each project takes place in the final 24 hours. The development
-          time allocated to each client is actually spent making augmented
-          reality demos that go viral on social media.
+          We believe in continuous improvement and maintain an open 
+          feedback loop post-deployment to make iterative 
+          {' '}<strong className="font-semibold text-accentOne">
+            enhancements
+          </strong> {' '}based on your experiences.
+
+          At CodeCanvas Creations LLC, our dedication to excellence guarantees
+          a solution that meets your immediate needs and positions you for future growth and innovation.
         </p>
         <p>
+          Our commitment extends beyond deployment with
           We ensure that the main pages of the site are{' '}
           <strong className="font-semibold text-accentOne">
-            fully functional
+            ongoing support
           </strong>{' '}
-          at launch — the auxiliary pages will, of course, be lorem ipusm shells
-          which get updated as part of our exorbitant{' '}
+          for troubleshooting, 
+          updates, and modifications, ensuring your software remains{' '}
           <strong className="font-semibold text-accentOne">
-            maintenance
+            cutting-edge
           </strong>{' '}
-          retainer.
+          and efficient. 
         </p>
       </div>
 
@@ -167,17 +181,17 @@ function Deliver() {
         Included in this phase
       </h3>
       <List className="mt-8">
-        <ListItem invert={false} title="Testing">
-          Our projects always have 100% test coverage, which would be impressive
-          if our tests weren’t as porous as a sieve.
+        <ListItem invert={false} title="Deployment and Testing">
+          Seamless deployment with rigorous unit, integration, and user acceptance tests
+          to ensure a robust and secure software solution.
         </ListItem>
-        <ListItem invert={false} title="Infrastructure">
-          To ensure reliability we only use the best Digital Ocean droplets that
-          $4 a month can buy.
+        <ListItem invert={false} title="Continuous Improvement">
+          Open feedback loops and periodic updates to keep the 
+          software aligned with the latest advancements and ensure long-term success.
         </ListItem>
-        <ListItem invert={false} title="Support">
-          Because we hold the API keys for every critical service your business
-          uses, you can expect a lifetime of support, and invoices, from us.
+        <ListItem invert={false} title="Support & Maintennance">
+          Ongoing support and maintenance to assist with troubleshooting, 
+          updates, and modifications, ensuring the software remains efficient and cutting-edge.
         </ListItem>
       </List>
     </Section>
@@ -199,39 +213,37 @@ function Values() {
         title="Balancing reliability and innovation"
       >
         <p>
-          We strive to stay at the forefront of emerging trends and
-          technologies, while completely ignoring them and forking that old
-          Rails project we feel comfortable using. We stand by our core values
-          to justify that decision.
+        By harmonizing proven practices with inventive approaches, 
+        we deliver software that not only meets your current needs
+         but also anticipates future challenges.
         </p>
       </SectionIntro>
 
       <Container className="mt-24">
         <GridList>
           <GridListItem invert={true} title="Meticulous">
-            The first part of any partnership is getting our designer to put
-            your logo in our template. The second step is getting them to do the
-            colors.
+            Our approach ensures every detail is scrutinized, 
+            resulting in software that is both robust and reliable. 
           </GridListItem>
           <GridListItem invert={true} title="Efficient">
-            We pride ourselves on never missing a deadline which is easy because
-            most of the work was done years ago.
+            By optimizing performance and minimizing waste, we deliver software 
+            that boosts productivity and accelerates your business growth.
           </GridListItem>
           <GridListItem invert={true} title="Adaptable">
             Every business has unique needs and our greatest challenge is
-            shoe-horning those needs into something we already built.
+            ensuring your system remains relevant and effective, providing long-term value in a dynamic market.
           </GridListItem>
           <GridListItem invert={true} title="Honest">
-            We are transparent about all of our processes, banking on the simple
-            fact our clients never actually read anything.
+            By providing clear communication and setting realistic expectations, 
+            we ensure that you are always informed and confident in the progress and outcomes of your project.
           </GridListItem>
           <GridListItem invert={true} title="Loyal">
-            We foster long-term relationships with our clients that go beyond
-            just delivering a product, allowing us to invoice them for decades.
+            Our commitment is to your success, ensuring dedicated support and collaboration throughout your journey. 
+            We prioritize building lasting partnerships by consistently delivering value and exceeding expectations.
           </GridListItem>
           <GridListItem invert={true} title="Innovative">
-            The technological landscape is always evolving and so are we. We are
-            constantly on the lookout for new open source projects to clone.
+            We continuously explore new technologies and creative methodologies to deliver 
+            unique and forward-thinking products tailored to your needs.
           </GridListItem>
         </GridList>
       </Container>
@@ -251,8 +263,8 @@ export default function Process() {
       <PageIntro eyebrow="Our process" title="How we work">
         <p>
           We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          best value to our clients. At CodeCanvas Creations LLC,
+          we combine these principles with a dedication to creativity, collaboration, and continuous innovation. 
         </p>
       </PageIntro>
 
