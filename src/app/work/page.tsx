@@ -149,12 +149,12 @@ export default async function Work() {
     <>
       <PageIntro
         eyebrow="Our work"
-        title="Proven solutions for real-world problems."
+        title="Proven solutions"
       >
         <p>
           We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past 5 years.
+          best value to our clients. The primary way we do that is by creating a diligent scope 
+          of work and delivering a solution that is as reliable as it is groundbreaking.
         </p>
       </PageIntro>
 
@@ -165,7 +165,7 @@ export default async function Work() {
         client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
       >
         We approached <em>CodeCanvas Creations LLC</em> because we loved their past work. They
-        delivered something remarkably similar in record time.
+        delivered something remarkable in record time.
       </Testimonial>
 
       <Clients />

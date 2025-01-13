@@ -128,12 +128,12 @@ function ContactDetails() {
         </dl>
       </Border>
 
-      <Border className="mt-16 p-16">
+      {/* <Border className="mt-16 p-16">
         <h2 className="font-display text-base font-semibold text-accentOne">
           Follow us
         </h2>
         <SocialMedia className="mt-6"/>
-      </Border>
+      </Border> */}
     </FadeIn>
   )
 }

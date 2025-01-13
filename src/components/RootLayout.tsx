@@ -19,9 +19,8 @@ import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
 
-import { SocialMedia } from '@/components/SocialMedia'
 
-const RootLayoutContext = createContext<{
+export const RootLayoutContext = createContext<{
   logoHovered: boolean
   setLogoHovered: React.Dispatch<React.SetStateAction<boolean>>
 } | null>(null)
@@ -75,7 +74,7 @@ function Header({
             filled={logoHovered}
           />
           <Logo
-            className="hidden h-8 sm:block"
+            className="hidden h-8 sm:flex"
             invert={invert}
             filled={logoHovered}
           />
@@ -229,7 +228,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
             </div>
             <Navigation />
             <div className="relative bg-accentOne before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-primary">
-              <Container>
+              {/* <Container>
                 <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
                   <div className="sm:border-l sm:border-transparent sm:pl-16">
                     <h2 className="font-display text-base font-semibold text-secondary">
@@ -238,7 +237,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
                     <SocialMedia className="mt-6" invert />
                   </div>
                 </div>
-              </Container>
+              </Container> */}
             </div>
           </motion.div>
         </motion.div>

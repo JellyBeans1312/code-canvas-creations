@@ -32,16 +32,15 @@ function Culture() {
       <Container className="mt-16">
         <GridList>
           <GridListItem title="Loyalty" invert>
-            Our team has been with us since the beginning because none of them
-            are allowed to have LinkedIn profiles.
+            We believe in loyalty and commitment to our clients and our team. 
+            Committed to delivering a solution that is above what is expected.
           </GridListItem>
           <GridListItem title="Trust" invert>
-            We don’t care when our team works just as long as they are working
-            every waking second.
+            We believe in trust and transparency. Keeping an open line of communication is 
+            a core value of our company.
           </GridListItem>
           <GridListItem title="Compassion" invert>
-            You never know what someone is going through at home and we make
-            sure to never find out.
+            You never know what someone is going through at home and we strive to make everyone's life a little easier. 
           </GridListItem>
         </GridList>
       </Container>
@@ -154,24 +153,21 @@ export default async function About() {
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            CodeCanvas Creations LLC was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+            CodeCanvas Creations LLC was started by Aidan McKay, a seasoned developer with a passion for creating innovative solutions.
+            We noticed that many development teams didn't take the time to understand the client's needs and goals,
+            and instead focused on delivering a minimum viable product.
           </p>
           <p>
-            At CodeCanvas Creations LLC, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+            We believe that every project deserves the attention and care it deserves, from the smallest detail to the largest scope of work.
+
           </p>
         </div>
       </PageIntro>
       <Container className="mt-16">
         <StatList>
-          <StatListItem value="35" label="Underpaid employees" />
-          <StatListItem value="52" label="Placated clients" />
-          <StatListItem value="$25M" label="Invoices billed" />
+          <StatListItem value="5" label="Years of experience" />
+          <StatListItem value="4" label="Projects completed" />
+          <StatListItem value="$10K" label="Invoices billed" />
         </StatList>
       </Container>
 
