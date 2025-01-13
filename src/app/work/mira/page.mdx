@@ -1,0 +1,57 @@
+import logo from '@/images/clients/phobia/logomark-dark.svg'
+import imageHero from './mira-hero.png'
+import imageAidanMcKay from '@/images/team/founder-ceo-aidan.jpg'
+
+export const caseStudy = {
+  client: 'Aidan McKay',
+  title: 'Project management at the next level.',
+  description:
+    'Mira is a project management tool that helps you manage your projects and tasks in a way that is easy to use and understand.',
+  summary: [
+    'Mira is a project management tool that helps you manage your projects and tasks in a way that is easy to use and understand.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2024-11',
+  service: 'Project management',
+  testimonial: {
+    author: { name: 'Jenny Wilson', role: 'CPO of Phobia' },
+    content:
+      '',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+When we set out to create Mira, the goal was to challenge our scoping, backend, and design capabilities by building a functional Jira clone. Unlike external client projects, this initiative was a personal endeavor aimed at honing technical skills and exploring best practices in project management tool design.
+
+Mira was developed with a focus on replicating and improving the core functionalities of Jira. It featured project boards, customizable workflows, task assignments, and real-time updates to simulate the demands of collaborative work environments. The backend was built to handle complex data relationships efficiently, while the user interface prioritized clarity and ease of use, ensuring an intuitive experience for users.
+
+Through the development of Mira, we gained valuable insights into system architecture, database optimization, and the nuances of user-centric design. This project not only served as a testing ground for technical growth but also demonstrated our ability to deliver polished, functional software that meets the needs of modern teams.
+
+## What we did
+
+<TagList>
+  <TagListItem>Project Management</TagListItem>
+  <TagListItem>Next.js</TagListItem>
+  <TagListItem>Progressive Web App</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Aidan McKay', role: 'Founder of CodeCanvas Creations' }}
+  image={{ src: imageAidanMcKay }}
+>
+  I can never go back to using Jira. Mira is the best project management tool I've ever used. (Don't quote me on that)
+</Blockquote>
+
+<StatList>
+  <StatListItem value="20%" label="Churn rate" />
+  <StatListItem value="5x" label="Rooms Cleaned" />
+  <StatListItem value="2.3" label="Tasks Completed a Day" />
+  <StatListItem value="8" label="Pending lawsuits" />
+</StatList>

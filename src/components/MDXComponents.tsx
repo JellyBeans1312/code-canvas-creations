@@ -84,6 +84,21 @@ export const MDXComponents = {
   Typography({ className, ...props }: React.ComponentPropsWithoutRef<'div'>) {
     return <div className={clsx('typography', className)} {...props} />
   },
+  h1: ({ children }: { children: React.ReactNode }) => (
+    <h1 className="font-display text-4xl font-bold mb-8">
+      {children}
+    </h1>
+  ),
+  h2: ({ children }: { children: React.ReactNode }) => (
+    <h2 className="font-display text-2xl font-semibold mt-12 mb-4 text-accentThree">
+      {children}
+    </h2>
+  ),
+  p: ({ children }: { children: React.ReactNode }) => (
+    <p className="mb-4 text-accentOne">
+      {children}
+    </p>
+  ),
   wrapper({ className, ...props }: React.ComponentPropsWithoutRef<'div'>) {
     return (
       <div

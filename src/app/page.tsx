@@ -38,7 +38,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+            We’ve worked with some of the most amazing people
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -73,9 +73,9 @@ function CaseStudies({
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
+          At CodeCanvas Creations LLC, we leverage advanced technology to 
+          create forward-thinking solutions that empower your business and 
+          pave the way for a brighter future.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -130,8 +130,8 @@ function Services() {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
+         Our goal is to empower you to discover and capitalize on emerging opportunities 
+        through creative and customized strategies tailored to your business goals.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -147,23 +147,24 @@ function Services() {
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4 lg:px-0 px-6 ">
             <ListItem invert={true} title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
+              We specialize in crafting visually stunning and highly 
+              functional websites that elevate your online presence 
+              and drive business success.
             </ListItem>
             <ListItem invert={true} title="Application development">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
+              At CodeCanvas Creations, we leverage cutting-edge frameworks like Next.js to develop innovative 
+              applications that are scalable, efficient, and tailored to your 
+              unique business needs.
             </ListItem>
             <ListItem invert={true} title="E-commerce">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
+              We are at the forefront of modern e-commerce development, 
+              creating seamless, secure, and user-friendly online shopping
+               experiences that drive sales and customer satisfaction.
             </ListItem>
             <ListItem invert={true} title="Custom content management">
               At CodeCanvas Creations LLC we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
+              customized CMS, and we excel at building tailored content management systems 
+              that empower you to effortlessly manage and grow your digital presence..
             </ListItem>
           </List>
         </div>
@@ -189,8 +190,8 @@ export default async function Home() {
           </h1>
           <p className="mt-6 text-xl text-accentOne">
             We are a development studio working at the intersection of design
-            and technology. It’s a really busy intersection though — a lot of
-            our staff have been involved in hit and runs.
+            and technology, delivering innovative solutions 
+            that are as reliable as they are groundbreaking.
           </p>
         </FadeIn>
       </Container>

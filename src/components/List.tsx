@@ -37,14 +37,14 @@ export function ListItem({
       <FadeIn>
         <Border className="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden">
           {title && (
-            <strong className={clsx("font-semibold text-primary", 
+            <strong className={clsx("font-semibold", 
               invert ? 'text-primary' : 'text-accentOne'
             )}>
               {`${title}. `}
             </strong>
           )}
           <p className={clsx('inline',
-            invert ? 'text-secondary' : 'text-accentTwo'
+            invert ? 'text-secondary' : 'text-neutral-300'
           )}>
             {children}
 
