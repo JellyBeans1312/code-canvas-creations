@@ -10,6 +10,7 @@ const navigation = [
   {
     title: 'Work',
     links: [
+      { title: 'Freedom Lawns', href: '/work/freedom-lawns' },
       { title: 'JBP Janitorial', href: '/work/jbp-janitorial' },
       { title: 'Mira', href: '/work/mira' },
       { title: 'Coreledger', href: '/work/coreledger' },
@@ -28,6 +29,7 @@ const navigation = [
     links: [
       { title: 'About', href: '/about' },
       { title: 'Process', href: '/process' },
+      { title: 'Documentation', href: '/documentation' },
       { title: 'Blog', href: '/blog' },
       { title: 'Contact us', href: '/contact' },
     ],
