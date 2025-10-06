@@ -94,6 +94,11 @@ export const MDXComponents = {
       {children}
     </h2>
   ),
+  h3: ({ children }: { children: React.ReactNode }) => (
+    <h3 className="font-display text-xl font-semibold mt-12 mb-4 text-accentThree">
+      {children}
+    </h3>
+  ),
   p: ({ children }: { children: React.ReactNode }) => (
     <p className="mb-4 text-accentOne">
       {children}
