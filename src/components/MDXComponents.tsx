@@ -99,6 +99,11 @@ export const MDXComponents = {
       {children}
     </h3>
   ),
+  ul: ({ children }: { children: React.ReactNode }) => (
+    <ul className="list-disc list-inside mb-4 text-accentTwo">
+      {children}
+    </ul>
+  ),
   p: ({ children }: { children: React.ReactNode }) => (
     <p className="mb-4 text-accentOne">
       {children}
